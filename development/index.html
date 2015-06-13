@@ -1,0 +1,32 @@
+<!doctype html>
+<html ng-app="DeveloperModule" ng-controller="DeveloperController">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Cached Http Service Example</title>
+  </head>
+
+  <body>
+
+    <!-- content -->
+    <ul>
+      <li ng-repeat="item in data">
+        {{item}}
+      </li>
+    </ul>
+
+    <!-- lib -->
+    <script src="lib/angular/angular.js"></script>
+
+    <!-- wrapper module -->
+    <script src="app/angular-local-cached-http-module.js"></script>
+
+    <!-- services -->
+    <script src="app/services/cached-http-service.js"></script>
+
+    <!-- development -->
+    <script src="./app.js"></script>
+    <script src="./controllers/developer-controller.js"></script>
+
+</body>
+</html>
