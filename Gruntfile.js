@@ -105,7 +105,7 @@ module.exports = function (grunt) {
               ),
               connect().use(
                 '/lib',
-                connect.static('./app/lib')
+                connect.static('./lib')
               ),
               connect.static('development')
             ];
@@ -222,7 +222,7 @@ module.exports = function (grunt) {
       },
       concat: {
         expand: true,
-        cwd: '<%= yeoman.app %>/scripts',
+        cwd: '<%= yeoman.app %>/',
         dest: '.tmp/scripts/',
         src: '{,*/}*.js'
       }
